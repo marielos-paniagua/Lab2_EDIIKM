@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2_EDII", "Lab2_EDII\Lab2_EDII.csproj", "{44FC8E20-3410-47FC-BA4C-69DEFE5413F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibHuffman", "LibHuffman\LibHuffman.csproj", "{1FA0E273-D452-41A2-99A5-2690D8E94CE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuffmanC", "HuffmanC\HuffmanC.csproj", "{3DD66E09-1B66-4698-B5E0-B5A76E2AFBBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FC8E20-3410-47FC-BA4C-69DEFE5413F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FC8E20-3410-47FC-BA4C-69DEFE5413F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FC8E20-3410-47FC-BA4C-69DEFE5413F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FC8E20-3410-47FC-BA4C-69DEFE5413F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA0E273-D452-41A2-99A5-2690D8E94CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA0E273-D452-41A2-99A5-2690D8E94CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA0E273-D452-41A2-99A5-2690D8E94CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA0E273-D452-41A2-99A5-2690D8E94CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD66E09-1B66-4698-B5E0-B5A76E2AFBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD66E09-1B66-4698-B5E0-B5A76E2AFBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD66E09-1B66-4698-B5E0-B5A76E2AFBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD66E09-1B66-4698-B5E0-B5A76E2AFBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF510338-84BB-4057-8D10-F518414A1D76}
+	EndGlobalSection
+EndGlobal

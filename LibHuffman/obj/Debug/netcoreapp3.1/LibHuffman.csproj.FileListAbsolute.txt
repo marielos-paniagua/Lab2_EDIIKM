@@ -1,0 +1,9 @@
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.csprojAssemblyReference.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.AssemblyInfoInputs.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.AssemblyInfo.cs
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.csproj.CoreCompileInputs.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibHuffman.deps.json
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibHuffman.dll
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibHuffman.pdb
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.dll
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibHuffman.pdb
