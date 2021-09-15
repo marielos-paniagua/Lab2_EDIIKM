@@ -38,7 +38,7 @@ namespace LibHuffman
                     Nodo = new HuffmanNode<T>(valor);
                     Diccionario.Add(Dato, Nodo);
                 }
-                Diccionario[Dato].Value.AgregarFrecuencia(1);
+                Diccionario[Dato].Valor.AgregarFrecuencia(1);
                 cont++;
                 valor = new T();
             }
@@ -49,14 +49,14 @@ namespace LibHuffman
             cantidad += ConvertirByte.ConvertirP(ConvertirI(Diccionario.Values.Count));
             foreach (var byteObject in Diccionario.Values)
             {
-                cantidad += ConvertirByte.ConvertirP(new byte[] { byteObject.Value.Valor() }) + ConvertirByte.ConvertirP(ConvertirI(byteObject.Value.Frecuencia()));
+                cantidad += ConvertirByte.ConvertirP(new byte[] { byteObject.Valor.Valor() }) + ConvertirByte.ConvertirP(ConvertirI(byteObject.Valor.Frecuencia()));
             }
 
 
             string texto = "";
             foreach (var DatoB in almacenar)
             {
-                texto += Diccionario[DatoB].Code;
+                texto += Diccionario[DatoB].rut;
             }
             while (texto.Length % 8 != 0)
             {
@@ -88,8 +88,8 @@ namespace LibHuffman
             ColaP = new ColaP<HuffmanNode<T>>();
             foreach (var Node in Diccionario.Values)
             {
-                Node.Value.CalculoP(cont);
-                ColaP.Agregar(Node, Node.Value.Probabilidad());
+                Node.Valor.CalculoP(cont);
+                ColaP.Agregar(Node, Node.Valor.Probabilidad());
             }
 
             T NewNodeValue = new T();
@@ -97,11 +97,11 @@ namespace LibHuffman
             {
                 var nodo = ColaP.ObtenerP();
                 var nodo1 = ColaP.ObtenerP();
-                NewNodeValue.MandarP(nodo.Value.Probabilidad() + nodo1.Value.Probabilidad());
+                NewNodeValue.MandarP(nodo.Valor.Probabilidad() + nodo1.Valor.Probabilidad());
                 var NewNode = new HuffmanNode<T>(NewNodeValue);
                 nodo.Padre = NewNode;
                 nodo1.Padre = NewNode;
-                if (nodo.Value.Probabilidad() < nodo1.Value.Probabilidad())
+                if (nodo.Valor.Probabilidad() < nodo1.Valor.Probabilidad())
                 {
                     NewNode.hijoi = nodo1;
                     NewNode.hijod = nodo;
@@ -111,7 +111,7 @@ namespace LibHuffman
                     NewNode.hijod = nodo1;
                     NewNode.hijoi = nodo;
                 }
-                ColaP.Agregar(NewNode, NewNode.Value.Probabilidad());
+                ColaP.Agregar(NewNode, NewNode.Valor.Probabilidad());
                 Ruta = NewNode;
                 NewNodeValue = new T();
             }
@@ -123,29 +123,29 @@ namespace LibHuffman
             {
                 if (nodo.Padre.hijoi == nodo)
                 {
-                    nodo.Code = $"{ruta}0";
+                    nodo.rut = $"{ruta}0";
                 }
                 else
                 {
-                    nodo.Code = $"{ruta}1";
+                    nodo.rut = $"{ruta}1";
                 }
-                if (Diccionario.ContainsKey(nodo.Value.Valor()))
+                if (Diccionario.ContainsKey(nodo.Valor.Valor()))
                 {
-                    Diccionario[nodo.Value.Valor()].Code = nodo.Code;
+                    Diccionario[nodo.Valor.Valor()].rut = nodo.rut;
                 }
             }
             else
             {
-                nodo.Code = "";
+                nodo.rut = "";
             }
 
             if (nodo.hijoi != null)
             {
-                CeroUno(nodo.hijoi, nodo.Code);
+                CeroUno(nodo.hijoi, nodo.rut);
             }
             if (nodo.hijod != null)
             {
-                CeroUno(nodo.hijod, nodo.Code);
+                CeroUno(nodo.hijod, nodo.rut);
             }
         }
 
@@ -207,7 +207,7 @@ namespace LibHuffman
                 {
                     foreach (var elchar in Diccionario)
                     {
-                        if (elchar.Value.Code == UnoCero)
+                        if (elchar.Value.rut == UnoCero)
                         {
                             bytes[0] = elchar.Key;
                             Descomprimido += ConvertirByte.ConvertirP(bytes);
@@ -248,6 +248,148 @@ namespace LibHuffman
             return enviar;
         }
 
-       
+        public async Task ComprimirF(string ruta, IFormFile file, string nombre)
+        {           
+            using var text = new FileStream($"{FilePath}/{file.FileName}", FileMode.OpenOrCreate);
+            await file.CopyToAsync(text);
+            using var reader = new BinaryReader(text);
+            var almacenar = new byte[5000];
+            Diccionario = new Dictionary<byte, HuffmanNode<T>>();
+            text.Position = text.Seek(0, SeekOrigin.Begin);
+            cont = 0.00;
+
+            while (text.Position != text.Length)
+            {
+                almacenar = reader.ReadBytes(5000);
+                T valor = new T();
+                HuffmanNode<T> Nodo;
+                foreach (var Dato in almacenar)
+                {
+                    if (!Diccionario.ContainsKey(Dato))
+                    {
+                        valor.Byte(Dato);
+                        Nodo = new HuffmanNode<T>(valor);
+                        Diccionario.Add(Dato, Nodo);
+                    }
+                    Diccionario[Dato].Valor.AgregarFrecuencia(1);
+                    cont++;
+                    valor = new T();
+                }
+            }
+            Arbol();
+            CeroUno(Ruta, "");
+
+            var Comprimido = new FileStream($"{FilePath}/{nombre}", FileMode.OpenOrCreate);
+            var escribir = new StreamWriter(Comprimido);
+            string cantidad = "";
+            cantidad += ConvertirByte.ConvertirP(ConvertirI(Diccionario.Values.Count));
+            escribir.Write(cantidad);
+            foreach (var byteObject in Diccionario.Values)
+            {
+                cantidad = ConvertirByte.ConvertirP(new byte[] { byteObject.Valor.Valor() }) + ConvertirByte.ConvertirP(ConvertirI(byteObject.Valor.Frecuencia()));
+                escribir.Write(cantidad);
+            }
+            text.Position = text.Seek(0, SeekOrigin.Begin);
+            string texto = "";
+
+            while (text.Position != text.Length)
+            {
+                almacenar = reader.ReadBytes(5000);
+                foreach (var DatoB in almacenar)
+                {
+                    texto += Diccionario[DatoB].rut;
+                    if (texto.Length >= 8)
+                    {
+                        escribir.Write((char)Convert.ToByte(texto.Substring(0, 8), 2));
+                        texto = texto.Remove(0, 8);
+                    }
+                }                
+            }
+            if (texto.Length != 0)
+            {
+                while (texto.Length % 8 != 0)
+                {
+                    texto += "0";
+                }
+                escribir.Write((char)Convert.ToByte(texto, 2));
+            }
+            text.Close();
+            escribir.Close();
+            Comprimido.Close();
+        }
+
+        public async Task DescomprimirF(IFormFile file, string nombre)
+        {
+            using var almacen = new FileStream($"{FilePath}/{file.FileName}", FileMode.OpenOrCreate);
+            await file.CopyToAsync(almacen);
+            using var reader = new StreamReader(almacen);
+            almacen.Position = almacen.Seek(0, SeekOrigin.Begin);
+            var lector = reader.ReadToEnd();
+
+            var almacenar = new byte[5000];
+            Diccionario = new Dictionary<byte, HuffmanNode<T>>();
+            almacenar = ConvertirByte.Convertir(lector);
+            T valor = new T();
+            HuffmanNode<T> Nodo;
+            cont = 0.00;
+            int cantidad = almacenar[0];
+
+            int contar = 0;
+            while (contar < cantidad)
+            {
+                almacenar = ConvertirByte.Convertir(lector.Substring(1 + (contar * 2), 2));
+                valor.Byte(almacenar[0]);
+                valor.AgregarFrecuencia(ConvertirB(almacenar));
+                cont += valor.Frecuencia();
+                Nodo = new HuffmanNode<T>(valor);
+                Diccionario.Add(almacenar[0], Nodo);
+                valor = new T();
+                contar++;
+            }
+            almacen.Close();
+            Arbol();
+            CeroUno(Ruta, "");
+
+            var text = "";
+            almacenar = ConvertirByte.Convertir(lector.Substring(1 + (cantidad * 2)));
+            text += ConvertirBinario(almacenar);
+
+            var UnoCero = "";
+            var Descomprimido = "";
+            int Contador = 0;
+            byte[] bytes = new byte[1];
+            bool flag = true;
+            var nuevo = new FileStream($"{FilePath}/{nombre}", FileMode.OpenOrCreate);
+            var escribir = new StreamWriter(nuevo);
+
+            while (Descomprimido.Length != cont)
+            {
+                while (flag)
+                {
+                    foreach (var elchar in Diccionario)
+                    {
+                        if (elchar.Value.rut == UnoCero)
+                        {
+                            bytes[0] = elchar.Key;
+                            Descomprimido += ConvertirByte.ConvertirP(bytes);
+                            flag = false;
+                        }
+                    }
+                    if (flag)
+                    {
+                        Contador++;
+                        UnoCero = text.Substring(0, Contador);
+                    }
+                }
+                flag = true;
+                UnoCero = "";
+                text = text.Remove(0, Contador);
+                Contador = 0;
+            }
+            escribir.Write(Descomprimido);
+            escribir.Close();
+            nuevo.Close();
+        }
+
     }
 }

@@ -7,8 +7,8 @@ namespace LibHuffman
     class HuffmanNode<T> where T : IDatos, new()
     {
         #region Variables
-        public T Value;
-        public string Code;
+        public T Valor;
+        public string rut;
         public HuffmanNode<T> Padre;
         public HuffmanNode<T> hijod;
         public HuffmanNode<T> hijoi;
@@ -16,7 +16,7 @@ namespace LibHuffman
 
         public HuffmanNode(T value)
         {
-            Value = value;
+            Valor = value;
         }
     }
 }

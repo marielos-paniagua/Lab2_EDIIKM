@@ -1,0 +1,1 @@
+Recibe un archivo .huff que se deberÃ¡ descomprimir Retorna el archivo de texto con el nombre original Devuelve OK si no hubo error Devuelve InternalServerError si hubo

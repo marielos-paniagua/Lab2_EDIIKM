@@ -10,6 +10,8 @@ namespace LibHuffman
     interface IHuffman
     {        
         string Comprimir(string text);
-        string DescomprimirT(string text);       
+        string DescomprimirT(string text);
+        Task ComprimirF(string ruta, IFormFile file, string nombre);
+        Task DescomprimirF(IFormFile file, string nombre);
     }
 }
