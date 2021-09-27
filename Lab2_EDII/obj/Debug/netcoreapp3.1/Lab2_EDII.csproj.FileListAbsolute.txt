@@ -15,8 +15,6 @@ C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\Microsoft
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\LibHuffman.dll
-C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\LibHuffman.pdb
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\staticwebassets\Lab2_EDII.StaticWebAssets.Manifest.cache
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\staticwebassets\Lab2_EDII.StaticWebAssets.xml
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\scopedcss\bundle\Lab2_EDII.styles.css
@@ -25,3 +23,5 @@ C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\Lab2_EDII
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\Lab2_EDII.dll
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\Lab2_EDII.pdb
 C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\obj\Debug\netcoreapp3.1\Lab2_EDII.genruntimeconfig.cache
+C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\LibCompress.dll
+C:\Users\casa\source\repos\Lab2_EDII\Lab2_EDII\bin\Debug\netcoreapp3.1\LibCompress.pdb

@@ -84,7 +84,7 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "LibHuffman/1.0.0": {
+      "LibCompress/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -92,10 +92,10 @@
           "System.Collections": "4.3.0"
         },
         "compile": {
-          "bin/placeholder/LibHuffman.dll": {}
+          "bin/placeholder/LibCompress.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LibHuffman.dll": {}
+          "bin/placeholder/LibCompress.dll": {}
         }
       }
     }
@@ -390,15 +390,15 @@
         "version.txt"
       ]
     },
-    "LibHuffman/1.0.0": {
+    "LibCompress/1.0.0": {
       "type": "project",
-      "path": "../LibHuffman/LibHuffman.csproj",
-      "msbuildProject": "../LibHuffman/LibHuffman.csproj"
+      "path": "../LibHuffman/LibCompress.csproj",
+      "msbuildProject": "../LibHuffman/LibCompress.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "LibHuffman >= 1.0.0"
+      "LibCompress >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -428,8 +428,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj": {
-              "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj"
+            "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj": {
+              "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj"
             }
           }
         }

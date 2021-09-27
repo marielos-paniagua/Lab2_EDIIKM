@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Lab2_EDII/1.0.0": {
         "dependencies": {
-          "LibHuffman": "1.0.0",
+          "LibCompress": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -377,16 +377,16 @@
           "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "LibHuffman/1.0.0": {
+      "LibCompress/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.9",
           "System.Collections": "4.3.0"
         },
         "runtime": {
-          "LibHuffman.dll": {}
+          "LibCompress.dll": {}
         },
         "compile": {
-          "LibHuffman.dll": {}
+          "LibCompress.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2121,7 +2121,7 @@
       "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
     },
-    "LibHuffman/1.0.0": {
+    "LibCompress/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LibHuffman
+namespace LibCompress
 {
     internal class NodoCP<T> : ICloneable
     {

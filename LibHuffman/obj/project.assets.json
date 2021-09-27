@@ -389,9 +389,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj",
-      "projectName": "LibHuffman",
-      "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj",
+      "projectUniqueName": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj",
+      "projectName": "LibCompress",
+      "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj",
       "packagesPath": "C:\\Users\\casa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\obj\\",
       "projectStyle": "PackageReference",

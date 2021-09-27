@@ -12,9 +12,7 @@ C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\Microsoft.
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\Lab2_EDII.dll
-C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\LibHuffman.dll
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\Lab2_EDII.pdb
-C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\LibHuffman.pdb
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.csprojAssemblyReference.cache
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.AssemblyInfoInputs.cache
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.AssemblyInfo.cs
@@ -23,3 +21,5 @@ C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.c
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.dll
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.pdb
 C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\obj\Debug\netcoreapp3.1\HuffmanC.genruntimeconfig.cache
+C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\LibCompress.dll
+C:\Users\casa\source\repos\Lab2_EDII\HuffmanC\bin\Debug\netcoreapp3.1\LibCompress.pdb

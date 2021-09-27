@@ -88,7 +88,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "LibHuffman": "1.0.0"
+          "LibCompress": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Lab2_EDII.dll": {}
@@ -100,7 +100,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "LibHuffman/1.0.0": {
+      "LibCompress/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -108,10 +108,10 @@
           "System.Collections": "4.3.0"
         },
         "compile": {
-          "bin/placeholder/LibHuffman.dll": {}
+          "bin/placeholder/LibCompress.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LibHuffman.dll": {}
+          "bin/placeholder/LibCompress.dll": {}
         }
       }
     }
@@ -411,16 +411,16 @@
       "path": "../Lab2_EDII/Lab2_EDII.csproj",
       "msbuildProject": "../Lab2_EDII/Lab2_EDII.csproj"
     },
-    "LibHuffman/1.0.0": {
+    "LibCompress/1.0.0": {
       "type": "project",
-      "path": "../LibHuffman/LibHuffman.csproj",
-      "msbuildProject": "../LibHuffman/LibHuffman.csproj"
+      "path": "../LibHuffman/LibCompress.csproj",
+      "msbuildProject": "../LibHuffman/LibCompress.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Lab2_EDII >= 1.0.0",
-      "LibHuffman >= 1.0.0"
+      "LibCompress >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -453,8 +453,8 @@
             "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\Lab2_EDII\\Lab2_EDII.csproj": {
               "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\Lab2_EDII\\Lab2_EDII.csproj"
             },
-            "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj": {
-              "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj"
+            "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj": {
+              "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj"
             }
           }
         }

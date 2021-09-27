@@ -31,8 +31,8 @@
               "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\Lab2_EDII\\Lab2_EDII.csproj": {
                 "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\Lab2_EDII\\Lab2_EDII.csproj"
               },
-              "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj": {
-                "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj"
+              "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj": {
+                "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj"
               }
             }
           }
@@ -92,8 +92,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj": {
-                "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj"
+              "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj": {
+                "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj"
               }
             }
           }
@@ -129,12 +129,12 @@
         }
       }
     },
-    "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj": {
+    "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj",
-        "projectName": "LibHuffman",
-        "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj",
+        "projectUniqueName": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj",
+        "projectName": "LibCompress",
+        "projectPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj",
         "packagesPath": "C:\\Users\\casa\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\obj\\",
         "projectStyle": "PackageReference",

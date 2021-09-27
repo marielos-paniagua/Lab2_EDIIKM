@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LibHuffman
+namespace LibCompress
 {
     public class ColaP<T>
     {

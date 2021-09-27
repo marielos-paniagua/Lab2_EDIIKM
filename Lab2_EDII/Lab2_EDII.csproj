@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibHuffman\LibHuffman.csproj" />
+    <ProjectReference Include="..\LibHuffman\LibCompress.csproj" />
   </ItemGroup>
 
 

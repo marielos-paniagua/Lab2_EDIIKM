@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lab2_EDII\Lab2_EDII.csproj" />
-    <ProjectReference Include="..\LibHuffman\LibHuffman.csproj" />
+    <ProjectReference Include="..\LibHuffman\LibCompress.csproj" />
   </ItemGroup>
 
 </Project>

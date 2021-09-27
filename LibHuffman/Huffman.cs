@@ -6,9 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System;
 
-namespace LibHuffman
+namespace LibCompress
 {
-    public class Huffman<T> : IHuffman where T : IDatos, new()
+    public class Huffman<T> : ICompress where T : IDatos, new()
     {
         HuffmanNode<T> Ruta;
         Dictionary<byte, HuffmanNode<T>> Diccionario;

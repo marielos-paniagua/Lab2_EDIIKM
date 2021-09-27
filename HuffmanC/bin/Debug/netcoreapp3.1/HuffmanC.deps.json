@@ -9,7 +9,7 @@
       "HuffmanC/1.0.0": {
         "dependencies": {
           "Lab2_EDII": "1.0.0",
-          "LibHuffman": "1.0.0"
+          "LibCompress": "1.0.0"
         },
         "runtime": {
           "HuffmanC.dll": {}
@@ -71,19 +71,19 @@
       },
       "Lab2_EDII/1.0.0": {
         "dependencies": {
-          "LibHuffman": "1.0.0"
+          "LibCompress": "1.0.0"
         },
         "runtime": {
           "Lab2_EDII.dll": {}
         }
       },
-      "LibHuffman/1.0.0": {
+      "LibCompress/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.9",
           "System.Collections": "4.3.0"
         },
         "runtime": {
-          "LibHuffman.dll": {}
+          "LibCompress.dll": {}
         }
       }
     }
@@ -155,7 +155,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LibHuffman/1.0.0": {
+    "LibCompress/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

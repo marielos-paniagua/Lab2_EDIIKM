@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using LibHuffman;
+using LibCompress;
 using Lab2_EDII.Models;
 
 namespace Lab2_EDII.Utils
@@ -20,6 +20,7 @@ namespace Lab2_EDII.Utils
             }
         }
         public Huffman<HuffmanM> Arbol;
+        public LZW<HuffmanM> Tabla;
         public List<Datos> Datos = new List<Datos>();
     }
 }

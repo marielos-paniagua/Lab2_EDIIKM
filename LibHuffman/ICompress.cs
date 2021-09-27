@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 
-namespace LibHuffman
+namespace LibCompress
 {
-    interface IHuffman
+    interface ICompress
     {        
         string Comprimir(string text);
         string DescomprimirT(string text);

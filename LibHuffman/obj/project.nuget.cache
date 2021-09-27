@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yBWJ/BysefkDW1uHmIEX2KVLpG7w7Yp1cij5lvYThLBi06Pm7k++hhT//oTzKkxTN8DXn8b/oMRwmfOMZ7y+tw==",
+  "dgSpecHash": "Dw+HYiHrEWYaFQSVXKhWSgpSqSq2H51KmGyLhsZJEi2snACxzLGiSzaDynBDAyjoj/oHEleNJUw4WDoAABCRZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibHuffman.csproj",
+  "projectFilePath": "C:\\Users\\casa\\source\\repos\\Lab2_EDII\\LibHuffman\\LibCompress.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\casa\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
     "C:\\Users\\casa\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",

@@ -1,0 +1,9 @@
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibCompress.deps.json
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibCompress.dll
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\bin\Debug\netcoreapp3.1\LibCompress.pdb
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.csprojAssemblyReference.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.AssemblyInfoInputs.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.AssemblyInfo.cs
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.csproj.CoreCompileInputs.cache
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.dll
+C:\Users\casa\source\repos\Lab2_EDII\LibHuffman\obj\Debug\netcoreapp3.1\LibCompress.pdb
